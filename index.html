@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="flex items-center justify-center bg-gray-300 h-screen">
+    <div class="bg-yellow-300 mx-3 rounded w-screen md:w-5/12">
+        <div class="container p-4">
+            <h1 class="underline text-white text-2xl">My ToDo List</h1>
+            <div class="my-3">
+                <input class="p-1 rounded-sm w-1/2 outline-none" type="text" name="list" id="list-input" required>
+                <button id="btn" class="bg-black text-white p-1 rounded-sm hover:bg-white hover:text-black hover:cursor-pointer">Add Event</button>
+            </div>
+            <div class="text-sm">
+                <h3 class="text-xl font-bold mb-3">Instructions</h3>
+                <div class="cursor-pointer">
+                    <p>Double click to remove</p>
+                    <p class="line-through">Single click to strike-through</p>
+                    <p>Enter text and hit submit.</p>
+                </div>
+            </div>
+
+            <main class="my-3">
+                <ul id="list" class="list-disc list-inside">
+                </ul>
+            </main>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
